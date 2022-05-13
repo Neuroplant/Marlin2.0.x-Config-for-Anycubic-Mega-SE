@@ -95,6 +95,7 @@
 #define SHOW_CUSTOM_BOOTSCREEN
 
 // Show the bitmap in Marlin/_Statusscreen.h on the status screen.
+
 #define CUSTOM_STATUS_SCREEN_IMAGE
 
 // @section machine
@@ -732,7 +733,7 @@
  * Note: For Bowden Extruders make this large enough to allow load/unload.
  */
 #define PREVENT_LENGTHY_EXTRUDE
-#define EXTRUDE_MAXLENGTH 200
+#define EXTRUDE_MAXLENGTH 501
 
 //===========================================================================
 //======================== Thermal Runaway Protection =======================
@@ -753,7 +754,7 @@
 
 #define THERMAL_PROTECTION_HOTENDS // Enable thermal protection for all extruders
 #define THERMAL_PROTECTION_BED     // Enable thermal protection for the heated bed
-#define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
+//#define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
 #define THERMAL_PROTECTION_COOLER  // Enable thermal protection for the laser cooling
 
 //===========================================================================
@@ -1469,7 +1470,9 @@
  * RAMPS-based boards use SERVO3_PIN for the first runout sensor.
  * For other boards you may need to define FIL_RUNOUT_PIN, FIL_RUNOUT2_PIN, etc.
  */
+//
 //#define FILAMENT_RUNOUT_SENSOR
+//#define FIL_RUNOUT_PIN 29
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
   #define FIL_RUNOUT_ENABLED_DEFAULT true // Enable the sensor on startup. Override with M412 followed by M500.
   #define NUM_RUNOUT_SENSORS   1          // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
@@ -1863,7 +1866,7 @@
 #define EEPROM_BOOT_SILENT    // Keep M503 quiet and only give errors during first load
 #if ENABLED(EEPROM_SETTINGS)
   //#define EEPROM_AUTO_INIT  // Init EEPROM automatically on any errors.
-  //#define EEPROM_INIT_NOW   // Init EEPROM on first boot after a new build.
+  //7#define EEPROM_INIT_NOW   // Init EEPROM on first boot after a new build.
 #endif
 
 //

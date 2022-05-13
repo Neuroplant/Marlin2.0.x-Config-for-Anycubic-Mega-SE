@@ -1248,8 +1248,8 @@
   #define MANUAL_FEEDRATE { 50*60, 50*60, 4*60, 10*60 } // (mm/min) Feedrates for manual moves along X, Y, Z, E from panel
   #define FINE_MANUAL_MOVE 0.025    // (mm) Smallest manual move (< 0.1mm) applying to Z on most machines
   #if IS_ULTIPANEL
-    #define MANUAL_E_MOVES_RELATIVE // Display extruder move distance rather than "position"
-    #define ULTIPANEL_FEEDMULTIPLY  // Encoder sets the feedrate multiplier on the Status Screen
+    //#define MANUAL_E_MOVES_RELATIVE // Display extruder move distance rather than "position"
+    //#define ULTIPANEL_FEEDMULTIPLY  // Encoder sets the feedrate multiplier on the Status Screen
   #endif
 #endif
 
@@ -1315,7 +1315,7 @@
   #define TURBO_BACK_MENU_ITEM
 
   // Insert a menu for preheating at the top level to allow for quick access
-  #define PREHEAT_SHORTCUT_MENU_ITEM
+  //#define PREHEAT_SHORTCUT_MENU_ITEM
 
 #endif // HAS_MARLINUI_MENU
 
@@ -1710,7 +1710,7 @@
   //#define STATUS_ALT_BED_BITMAP     // Use the alternative bed bitmap
   //#define STATUS_ALT_FAN_BITMAP     // Use the alternative fan bitmap
   //#define STATUS_FAN_FRAMES 3       // :[0,1,2,3,4] Number of fan animation frames
-  //#define STATUS_HEAT_PERCENT       // Show heating in a progress bar
+  #define STATUS_HEAT_PERCENT       // Show heating in a progress bar
   //#define BOOT_MARLIN_LOGO_ANIMATED // Animated Marlin logo. Costs ~3260 (or ~940) bytes of PROGMEM.
 
   // Frivolous Game Options
@@ -3373,7 +3373,7 @@
  * M260 S1   ; Send the current buffer
  *
  * ; Example #2
- * ; Request 6 bytes from slave device with address 0x63 (99)
+ * ; Request 6 bytes from slave device with address 0x63 (99) 
  * M261 A99 B5
  *
  * ; Example #3
