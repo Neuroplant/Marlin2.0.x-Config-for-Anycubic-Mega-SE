@@ -9,4 +9,11 @@ for you to do:
 
 or you can use the firmware.hex..
 
+Alternative Configurations in Subfolddr
+
+
 ###### *This will kill your printer, don't blame me if not*
+
+###### Don't update via Repetier Server/Octoprint
+
+###### Bricked? https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP
