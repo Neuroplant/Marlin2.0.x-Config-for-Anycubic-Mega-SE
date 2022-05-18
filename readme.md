@@ -9,7 +9,11 @@ for you to do:
 
 or you can use the firmware.hex..
 
-# SD-Support is deactivated to add features more interesting to me
+# SD-Support is deactivated 
+
+* Brickout
+* Filament Runout Sensor
+* Arc Support
 
 ###### *This will kill your printer, don't blame me if not*
 
