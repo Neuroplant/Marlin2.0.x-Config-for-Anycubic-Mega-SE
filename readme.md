@@ -9,8 +9,9 @@ for you to do:
 
 or you can use the firmware.hex..
 
-Alternative Configurations in Subfolddr
+Alternative Configuration w/o SD Support
 
+This is to be used with "Marlin 2.0 with bug fixes"
 
 ###### *This will kill your printer, don't blame me if not*
 
